@@ -31,7 +31,11 @@ Step 6: Coming to Kafka implementation, go through the application.properties, i
 Step 7: You can test the crud operations using POSTMAN api request and response for all the http verbs. you can also validate by using mongoDB compass community. paymentapp-crud-mongodb-kafka-alert
 
 
-Step 8: Open https://www.twilio.com/login, create your own twilio account by providing your personal email id and mobile number. Twilio account will facilitate us to fetch the messages from the kafka producer to consumer. for this we need to do some setup while registering the accunt in application.properties file. i.e this is the conf how it looks like, keys would be same for everyone(sid,token,number), but values should be different to get messages to be delivered on your provided number. twilio.account.sid=ACaccecd964d6335d5fa9c07d2be0fc0df twilio.auth.token=91a7dd23d7a06b18796b573006f16464 twilio.trial.number=+17042439124
+Step 8: Open https://www.twilio.com/login, create your own twilio account by providing your personal email id and mobile number. Twilio account will facilitate us to fetch the messages from the kafka producer to consumer. for this we need to do some setup while registering the accunt in application.properties file. i.e this is the conf how it looks like, keys would be same for everyone(sid,token,number), but values should be different to get messages to be delivered on your provided number.
+
+twilio.account.sid=ACaccecd964d6335d5fa9c07d2be0fc0df 
+twilio.auth.token=91a7dd23d7a06b18796b573006f16464 
+twilio.trial.number=+17042439124
 
 
 Step 9 : In the KafkaConsumerPaymentAlert class you need to provide the topics name which you have provided in your kafkaproducer application.properties file, that you need to provide in kafkaconsumer to read the messages coming i.e @KafkaListener(topics = "payment")
