@@ -34,6 +34,7 @@ Step 7: You can test the crud operations using POSTMAN api request and response 
 Step 8: Open https://www.twilio.com/login, create your own twilio account by providing your personal email id and mobile number. Twilio account will facilitate us to fetch the messages from the kafka producer to consumer. for this we need to do some setup while registering the accunt in application.properties file. i.e this is the conf how it looks like, keys would be same for everyone(sid,token,number), but values should be different to get messages to be delivered on your provided number.
 
 twilio.account.sid=ACaccecd964d6335d5fa9c07d2be0fc0df 
+
 twilio.auth.token=91a7dd23d7a06b18796b573006f16464 
 twilio.trial.number=+17042439124
 
